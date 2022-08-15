@@ -402,6 +402,8 @@ export default class DayPickerSingleDateController extends React.Component {
   }
 
   onMonthChange(newMonth) {
+
+    window.asurvant = [newMonth]
     const { numberOfMonths, enableOutsideDays, orientation } = this.props;
     const withoutTransitionMonths = orientation === VERTICAL_SCROLLABLE;
     const newVisibleDays =
